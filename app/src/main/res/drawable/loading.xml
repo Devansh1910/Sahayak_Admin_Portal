@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    android:shape="rectangle"
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xmls="http://schemas.android.com/aapt">
+
+    <solid android:color="@color/white"/>
+    <corners
+        android:radius="60dp"/>
+    <stroke android:width="3dip"
+        android:color="@color/black"/>
+</shape>

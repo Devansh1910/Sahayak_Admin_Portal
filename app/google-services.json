@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "541781180005",
+    "project_id": "onestore-a0a00",
+    "storage_bucket": "onestore-a0a00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541781180005:android:8984a37c7eb34760db508c",
+        "android_client_info": {
+          "package_name": "com.devanshsaxena.cafedemoproduct"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541781180005-31otv1p1dek42t71cheb3k726m2avl8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoV0gpxwdkcoS4R1m7qTQ1vvZ0PF50-Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541781180005-31otv1p1dek42t71cheb3k726m2avl8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541781180005:android:fbc8a158ec73f6fbdb508c",
+        "android_client_info": {
+          "package_name": "com.devanshsaxena.onestoreadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541781180005-31otv1p1dek42t71cheb3k726m2avl8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoV0gpxwdkcoS4R1m7qTQ1vvZ0PF50-Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541781180005-31otv1p1dek42t71cheb3k726m2avl8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
