@@ -19,7 +19,6 @@ import com.google.firebase.auth.PhoneAuthProvider
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.concurrent.TimeUnit
 
-
 class LoginActivity : AppCompatActivity() {
     private lateinit var mAuth: FirebaseAuth
     private lateinit var mCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
@@ -42,14 +41,8 @@ class LoginActivity : AppCompatActivity() {
         useradminPhoneNumber = findViewById(R.id.userPhoneNumber)
         progressBar = findViewById(R.id.progressBar)
         loginBtn = findViewById(R.id.loginact)
-        signup = findViewById(R.id.signupact)
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE)
-
-        signup.setOnClickListener {
-            val intent = Intent(this@LoginActivity, RegistrationActivity::class.java)
-            startActivity(intent)
-        }
 
         loginBtn.setOnClickListener {
             if (useradminPhoneNumber.text.toString().trim().length != 10) {
@@ -71,22 +64,11 @@ class LoginActivity : AppCompatActivity() {
                     if (!task.result.isEmpty) {
                         otpSend()
                     } else {
-                        // detail is not present in the database, show a Toast message
                         Toast.makeText(
                             this@LoginActivity,
-                            "${useradminPhoneNumber.text} is not registered.",
+                            "${useradminPhoneNumber.text} is not Authorized.",
                             Toast.LENGTH_SHORT
                         ).show()
-                        Toast.makeText(
-                            this@LoginActivity,
-                            "Moving to Registration...",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        Handler().postDelayed({
-                            val i = Intent(this@LoginActivity, RegistrationActivity ::class.java)
-                            startActivity(i)
-                            finish()
-                        }, 1000)
                     }
                 }
             }
